@@ -1,13 +1,15 @@
 .social-media-footer {
   width: 206px;
   height: 80px;
-  margin-top: 10px;
-  margin-left: 70px;
+  margin: 0 auto;
+  margin-top: 60px;
 
   &__title {
     font: $sub-title-font;
     color: $secondary-color;
     text-transform: uppercase;
+    display: block;
+    text-align: center;
   }
 }
 

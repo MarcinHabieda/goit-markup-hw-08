@@ -1,39 +1,45 @@
 .contact-header {
-  display: flex;
-  align-items: center;
-  font: $link-font;
-  text-decoration: none;
-  color: $secondary-text-color;
-  fill: $secondary-text-color;
-  transition-property: color, fill;
-  transition-duration: $default-transition-duration;
-  transition-timing-function: $default-transition-timing-function;
+  display: none;
+}
 
-  &:hover,
-  &:focus {
-    color: $highlight-color;
-    fill: $highlight-color;
-  }
+@media (min-width: 481px) {
+  .contact-header {
+    display: flex;
+    align-items: center;
+    font: $link-font;
+    text-decoration: none;
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+    transition-property: color, fill;
+    transition-duration: $default-transition-duration;
+    transition-timing-function: $default-transition-timing-function;
 
-  &--mail {
-    margin-left: 371px;
-    width: 161px;
-  }
+    &:hover,
+    &:focus {
+      color: $highlight-color;
+      fill: $highlight-color;
+    }
 
-  &__icon-envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-  }
+    &--mail {
+      margin-left: 371px;
+      width: 161px;
+    }
 
-  &--tel {
-    margin-left: 50px;
-    width: 130px;
-  }
+    &__icon-envelope {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
 
-  &__icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    &--tel {
+      margin-left: 50px;
+      width: 130px;
+    }
+
+    &__icon-smartphone {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
   }
 }

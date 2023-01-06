@@ -1,13 +1,14 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   transition-property: fill, border-color;
   transition-duration: $default-transition-duration;
   transition-timing-function: $default-transition-timing-function;
 
   & > li {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $icons-color;
     border-radius: 4px;
@@ -54,4 +55,4 @@
     width: 93.79px;
     height: 43.93px;
   }
-}
+} 

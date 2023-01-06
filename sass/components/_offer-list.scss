@@ -1,16 +1,16 @@
 .offer-list {
-  display: flex;
   margin-top: 50px;
-  width: 1170px;
+  max-width: 1170px;
 
   & > li {
+    margin: 0 auto;
     width: 370px;
     height: 294px;
     position: relative;
   }
 
   & > li:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
   &__box {

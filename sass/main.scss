@@ -17,10 +17,11 @@
 @import './components/browser';
 @import './components/category-list';
 
-body {
+ body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
-  width: 1600px;
+  max-width: 1600px;
+  min-width: 480px;
   margin: 0 auto;
 }
 
@@ -48,7 +49,7 @@ input {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
