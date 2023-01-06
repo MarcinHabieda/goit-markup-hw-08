@@ -1,4 +1,5 @@
 .address {
+  margin: 0 auto;
   margin-top: 20px;
   width: 246px;
 
@@ -6,6 +7,8 @@
     font: $default-font;
     text-decoration: none;
     color: $secondary-color;
+    display: block;
+    text-align: center;
   }
 
   &__contact {
@@ -16,6 +19,8 @@
     transition-property: color;
     transition-duration: $default-transition-duration;
     transition-timing-function: $default-transition-timing-function;
+    display: block;
+    text-align: center;
   }
 
   &__contact:hover,
