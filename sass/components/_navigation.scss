@@ -1,0 +1,50 @@
+.navigation {
+  display: flex;
+  width: 254px;
+  margin-left: 93px;
+
+  & > li:not(:last-child) {
+    margin-right: 46px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font: $link-font;
+    color: $main-color;
+    transition-property: color;
+    transition-duration: $default-transition-duration;
+    transition-timing-function: $default-transition-timing-function;
+    position: relative;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $highlight-color;
+  }
+}
+
+.navigation__link {
+  &--index::after {
+    content: '';
+    color: $highlight-color;
+    width: 100%;
+    height: 4px;
+    background-color: $highlight-color;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: -28px;
+  }
+
+  &--portfolio::after {
+    content: '';
+    color: $highlight-color;
+    width: 100%;
+    height: 4px;
+    background-color: $highlight-color;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: -28px;
+  }
+}

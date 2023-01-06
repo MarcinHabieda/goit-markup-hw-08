@@ -1,0 +1,57 @@
+.clients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  transition-property: fill, border-color;
+  transition-duration: $default-transition-duration;
+  transition-timing-function: $default-transition-timing-function;
+
+  & > li {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    fill: $icons-color;
+    position: relative;
+  }
+
+  & > li:hover,
+  & > li:focus {
+    fill: $highlight-color;
+    border-color: $highlight-color;
+  }
+}
+
+.clients-list__item {
+  @include center();
+
+  &--company1 {
+    width: 41px;
+    height: 46.7px;
+  }
+
+  &--company2 {
+    width: 40px;
+    height: 52px;
+  }
+
+  &--company3 {
+    width: 43.46px;
+    height: 41.18px;
+  }
+
+  &--company4 {
+    width: 84.44px;
+    height: 40.62px;
+  }
+
+  &--company5 {
+    width: 62.54px;
+    height: 45.43px;
+  }
+
+  &--company6 {
+    width: 93.79px;
+    height: 43.93px;
+  }
+}

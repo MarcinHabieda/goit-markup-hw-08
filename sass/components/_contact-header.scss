@@ -1,0 +1,39 @@
+.contact-header {
+  display: flex;
+  align-items: center;
+  font: $link-font;
+  text-decoration: none;
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
+  transition-property: color, fill;
+  transition-duration: $default-transition-duration;
+  transition-timing-function: $default-transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+    fill: $highlight-color;
+  }
+
+  &--mail {
+    margin-left: 371px;
+    width: 161px;
+  }
+
+  &__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+
+  &--tel {
+    margin-left: 50px;
+    width: 130px;
+  }
+
+  &__icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}

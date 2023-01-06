@@ -1,0 +1,25 @@
+.address {
+  margin-top: 20px;
+  width: 246px;
+
+  &__place {
+    font: $default-font;
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+  &__contact {
+    font: $default-font;
+    text-decoration: none;
+    color: $contact-footer-color;
+    margin-top: 9px;
+    transition-property: color;
+    transition-duration: $default-transition-duration;
+    transition-timing-function: $default-transition-timing-function;
+  }
+
+  &__contact:hover,
+  &__contact:focus {
+    color: $highlight-color;
+  }
+}

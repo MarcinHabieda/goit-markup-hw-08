@@ -1,0 +1,25 @@
+.logo {
+  text-decoration: none;
+  font: $logo-font;
+  transition-property: color;
+  transition-duration: $default-transition-duration;
+  transition-timing-function: $default-transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $highlight-color;
+  }
+
+  &--header {
+    color: $logo-color;
+    width: 145px;
+  }
+
+  &--footer {
+    color: $secondary-color;
+  }
+
+  &__highlight {
+    color: $highlight-color;
+  }
+}

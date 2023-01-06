@@ -1,0 +1,52 @@
+.lorem-ispum-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1170px;
+
+  & > li {
+    width: 270px;
+  }
+
+  &__title {
+    font: $sub-title-font;
+  }
+
+  &__descryption {
+    font: $default-font;
+    color: $secondary-text-color;
+  }
+}
+
+.lorem-ispum-list__icon {
+  width: 270px;
+  height: 120px;
+  background: $secondary-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  position: relative;
+
+  & > svg {
+    @include center();
+  }
+
+  &--antenna {
+    width: 65.32px;
+    height: 70px;
+  }
+
+  &--clock {
+    width: 66.96px;
+    height: 70px;
+  }
+
+  &--diagram {
+    width: 70px;
+    height: 70px;
+  }
+
+  &--astronaut {
+    width: 70px;
+    height: 70px;
+  }
+}

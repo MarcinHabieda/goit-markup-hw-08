@@ -1,0 +1,66 @@
+.team-section {
+  background-color: $secondary-background-color;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 50px;
+  width: 1170px;
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__member {
+    background-color: $secondary-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    width: 270px;
+    margin: 0;
+  }
+
+  &__name {
+    font: $name-font;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 72px;
+  }
+
+  &__job {
+    font-size: 16px;
+    line-height: 1.19;
+    color: $secondary-text-color;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+}
+
+.team-list__media {
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+
+  & > li {
+    width: 44px;
+    height: 44px;
+    fill: $icons-color;
+    border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: $default-transition-duration;
+    transition-timing-function: $default-transition-timing-function;
+  }
+
+  & > li:hover,
+  & > li:focus {
+    background-color: $highlight-color;
+    border-radius: 50%;
+    fill: $secondary-color;
+  }
+}

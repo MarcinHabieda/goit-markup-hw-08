@@ -1,0 +1,74 @@
+@import './utils/variables';
+@import './components/address';
+@import './components/clients-list';
+@import './components/contact-header';
+@import './components/footer';
+@import './components/header';
+@import './components/logo';
+@import './components/lorem-ipsum-list';
+@import './components/modal-form';
+@import './components/modal';
+@import './components/navigation';
+@import './components/newsletter';
+@import './components/offer-list';
+@import './components/social-media-footer';
+@import './components/team-section';
+@import './components/welcome-section';
+@import './components/browser';
+@import './components/category-list';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  width: 1600px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+
+input {
+  border: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.secondary-title {
+  font: $title-font;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+}

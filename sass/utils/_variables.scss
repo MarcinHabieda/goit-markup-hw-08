@@ -1,0 +1,27 @@
+$main-color: #212121;
+$background-color: #2f303a;
+$highlight-color: #2196f3;
+$secondary-color: #ffffff;
+$secondary-text-color: #757575;
+$secondary-background-color: #f5f4fa;
+$logo-color: #000000;
+$contact-footer-color: rgba(255, 255, 255, 0.6);
+$icons-color: #afb1b8;
+$icons-background-footer: rgba(255, 255, 255, 0.1);
+
+$logo-font: 700 26px/1.19 'Raleway';
+$link-font: 500 14px/1.14 'Roboto';
+$sub-title-font: 700 14px/1.14 'Roboto';
+$default-font: 14px/1.71 'Roboto';
+$title-font: 700 36px/1.17 'Roboto';
+$name-font: 500 16px/1.19 'Roboto';
+
+$default-transition-duration: 250ms;
+$default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
