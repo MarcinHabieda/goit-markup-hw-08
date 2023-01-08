@@ -55,4 +55,16 @@
     width: 93.79px;
     height: 43.93px;
   }
-} 
+}
+
+@media (max-width: 767px) {
+  .clients-list {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    & > li {
+      width: 210px;
+    }
+  }
+}

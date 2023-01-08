@@ -1,9 +1,12 @@
-.navigation {
-    display: none;
+nav {
+  display: none;
 }
 
+@media (min-width: 768px) {
+  nav {
+    display: block;
+  }
 
-@media (min-width: 481px) {
   .navigation {
     display: flex;
     width: 254px;

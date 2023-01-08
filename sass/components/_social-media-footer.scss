@@ -1,15 +1,11 @@
 .social-media-footer {
   width: 206px;
   height: 80px;
-  margin: 0 auto;
-  margin-top: 60px;
 
   &__title {
     font: $sub-title-font;
     color: $secondary-color;
     text-transform: uppercase;
-    display: block;
-    text-align: center;
   }
 }
 
@@ -34,5 +30,17 @@
   & > li:hover,
   & > li:focus {
     background-color: $highlight-color;
+  }
+}
+
+@media (max-width: 767px) {
+  .social-media-footer {
+    margin: 0 auto;
+    margin-top: 60px;
+
+    &__title {
+      display: block;
+      text-align: center;
+    }
   }
 }

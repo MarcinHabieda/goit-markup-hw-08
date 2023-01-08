@@ -17,11 +17,16 @@
 
   &--footer {
     color: $secondary-color;
-    display: block;
-    text-align: center;
   }
 
   &__highlight {
     color: $highlight-color;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo--footer {
+    display: block;
+    text-align: center;
   }
 }

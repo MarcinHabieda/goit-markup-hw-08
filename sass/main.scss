@@ -16,8 +16,9 @@
 @import './components/welcome-section';
 @import './components/browser';
 @import './components/category-list';
+@import './components/mobile-menu';
 
- body {
+body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color);
   max-width: 1600px;
