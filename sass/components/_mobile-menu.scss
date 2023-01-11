@@ -12,12 +12,6 @@
   outline: none;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
 .menu-toggle:hover,
 .menu-toggle:focus {
   color: $highlight-color;
@@ -29,7 +23,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding-left: 40px;
   background-color: $secondary-color;
   z-index: 999;
   transform: translateX(100%);
@@ -45,4 +39,70 @@
   top: 16px;
   right: 16px;
   color: $main-color;
+}
+
+.menu-container .menu-toggle:hover {
+  color: $highlight-color;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu-navigation {
+  margin-top: 48px;
+
+  & > li:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-decoration: none;
+    color: $main-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $highlight-color;
+  }
+}
+
+.mobile-menu-contact-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  color: $highlight-color;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  bottom: 194px;
+}
+
+.mobile-menu-contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $secondary-text-color;
+  text-decoration: none;
+  position: absolute;
+  bottom: 134px;
+}
+
+.mobile-menu-social-media {
+  color: $icons-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  position: absolute;
+  bottom: 48px;
+
+  &__link {
+    text-decoration: none;
+    color: $highlight-color;
+  }
 }
