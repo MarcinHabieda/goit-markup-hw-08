@@ -6,3 +6,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media (min-width: 768px) {
+  .info-footer-container {
+    display: flex;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+}

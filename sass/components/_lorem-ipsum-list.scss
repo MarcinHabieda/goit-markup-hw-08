@@ -47,3 +47,24 @@
     height: 70px;
   }
 }
+
+@media (min-width: 768px) {
+  .lorem-ispum-list {
+    margin: 0 auto;
+    max-width: 738px;
+
+    & > li {
+      width: 354px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .lorem-ispum-list {
+    max-width: 1170px;
+
+    & > li {
+      width: 270px;
+    }
+  }
+}

@@ -31,4 +31,38 @@ nav {
       color: $highlight-color;
     }
   }
+
+  .navigation__link {
+    &--index::after {
+      content: '';
+      color: $highlight-color;
+      width: 100%;
+      height: 4px;
+      background-color: $highlight-color;
+      border-radius: 2px;
+      display: block;
+      position: absolute;
+      bottom: -34px;
+    }
+
+    &--portfolio::after {
+      content: '';
+      color: $highlight-color;
+      width: 100%;
+      height: 4px;
+      background-color: $highlight-color;
+      border-radius: 2px;
+      display: block;
+      position: absolute;
+      bottom: -28px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation__link {
+    &--index::after {
+      bottom: -32px;
+    }
+  }
 }

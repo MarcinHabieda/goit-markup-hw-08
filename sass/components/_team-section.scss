@@ -60,7 +60,6 @@
 @media (max-width: 767px) {
   .team-list {
     margin-top: 30px;
-    max-width: 1170px;
 
     & > li:not(:last-child) {
       margin-bottom: 30px;
@@ -69,6 +68,45 @@
     &__member {
       width: 450px;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 738px;
+
+    &__member {
+      width: 354px;
+      margin: 0 auto;
+    }
+
+    &__member > img {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list {
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    gap: 30px;
+    max-width: 1170px;
+
+    &__member {
+      width: 270px;
+    }
+
+    &__member > img {
+      width: 270px;
+      height: 260px;
     }
   }
 }

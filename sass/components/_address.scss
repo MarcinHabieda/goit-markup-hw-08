@@ -38,3 +38,33 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .address {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 246px;
+
+    &__place {
+      display: block;
+      text-align: center;
+    }
+
+    &__contact {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .address {
+    &__place {
+      text-align: left;
+    }
+
+    &__contact {
+      text-align: left;
+    }
+  }
+}

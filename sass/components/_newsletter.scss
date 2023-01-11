@@ -62,3 +62,49 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .newsletter {
+    margin-top: 60px;
+
+    &__tittle {
+      margin-bottom: 20px;
+      display: block;
+      text-align: center;
+    }
+
+    &__input {
+      width: 450px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__button {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsletter {
+    margin-top: 12px;
+    width: 570px;
+    display: flex;
+    margin-left: 78px;
+
+    &__tittle {
+      margin-bottom: 20px;
+      display: block;
+      text-align: left;
+    }
+
+    &__input {
+      width: 358px;
+    }
+
+    &__button {
+      margin-top: 36px;
+    }
+  }
+}

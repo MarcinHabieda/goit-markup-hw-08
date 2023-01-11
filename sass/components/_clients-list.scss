@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 450px;
+  margin: 0 auto;
   margin-top: 30px;
   transition-property: fill, border-color;
   transition-duration: $default-transition-duration;
@@ -57,14 +59,23 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .clients-list {
-    max-width: 450px;
-    margin: 0 auto;
-    margin-top: 30px;
+    max-width: 738px;
 
     & > li {
-      width: 210px;
+      width: 226px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list {
+    max-width: 1170px;
+    margin-top: 50px;
+
+    & > li {
+      width: 170px;
     }
   }
 }

@@ -165,3 +165,21 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: 1200px) {
+  .modal-form {
+    &__input {
+      width: 448px;
+    }
+
+    &__textarea {
+      width: 448px;
+    }
+  }
+
+  .modal-form-checkbox {
+    &__input {
+      left: 53px;
+    }
+  }
+}

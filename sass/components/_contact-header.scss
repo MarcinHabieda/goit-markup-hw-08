@@ -1,4 +1,4 @@
-.contact-header {
+.contact-header-tablet {
   display: none;
 }
 
@@ -21,7 +21,6 @@
     }
 
     &--mail {
-      margin-left: 371px;
       width: 161px;
     }
 
@@ -32,7 +31,7 @@
     }
 
     &--tel {
-      margin-left: 50px;
+      margin-top: 10px;
       width: 130px;
     }
 
@@ -40,6 +39,25 @@
       width: 10px;
       height: 16px;
       margin-right: 10px;
+    }
+  }
+
+  .contact-header-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-header-tablet {
+    display: flex;
+    align-items: center;
+    margin-left: 345px;
+  }
+
+  .contact-header {
+    &--tel {
+      margin-top: 0;
+      margin-left: 30px;
     }
   }
 }

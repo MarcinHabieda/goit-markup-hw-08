@@ -4,7 +4,7 @@
 
 .header-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -12,5 +12,23 @@
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .header-container{
+    justify-content: flex-start;
   }
 }
