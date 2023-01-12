@@ -1,19 +1,18 @@
-nav {
+.navigation-container {
   display: none;
 }
 
 @media (min-width: 768px) {
-  nav {
+  .navigation-container {
     display: block;
   }
 
   .navigation {
     display: flex;
-    width: 254px;
-    margin-left: 93px;
+    max-width: 282px;
 
     & > li:not(:last-child) {
-      margin-right: 46px;
+      margin-right: 60px;
     }
 
     &__link {
@@ -60,6 +59,14 @@ nav {
 }
 
 @media (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+
+    & > li:not(:last-child) {
+      margin-right: 46px;
+    }
+  }
+
   .navigation__link {
     &--index::after {
       bottom: -32px;

@@ -23,28 +23,28 @@
   margin-bottom: 30px;
   position: relative;
 
-  & > svg {
-    @include center();
-  }
-
   &--antenna {
     width: 65.32px;
     height: 70px;
+    @include center();
   }
 
   &--clock {
     width: 66.96px;
     height: 70px;
+    @include center();
   }
 
   &--diagram {
     width: 70px;
     height: 70px;
+    @include center();
   }
 
   &--astronaut {
     width: 70px;
     height: 70px;
+    @include center();
   }
 }
 

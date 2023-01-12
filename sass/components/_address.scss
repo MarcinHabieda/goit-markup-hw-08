@@ -1,14 +1,22 @@
 .address {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 246px;
+
   &__place {
     font: $default-font;
     text-decoration: none;
     color: $secondary-color;
+    display: block;
+    text-align: center;
   }
 
   &__contact {
     font: $default-font;
     text-decoration: none;
     color: $contact-footer-color;
+    display: block;
+    text-align: center;
     margin-top: 9px;
     transition-property: color;
     transition-duration: $default-transition-duration;
@@ -18,42 +26,6 @@
   &__contact:hover,
   &__contact:focus {
     color: $highlight-color;
-  }
-}
-
-@media (max-width: 767px) {
-  .address {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 246px;
-
-    &__place {
-      display: block;
-      text-align: center;
-    }
-
-    &__contact {
-      display: block;
-      text-align: center;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .address {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 246px;
-
-    &__place {
-      display: block;
-      text-align: center;
-    }
-
-    &__contact {
-      display: block;
-      text-align: center;
-    }
   }
 }
 
